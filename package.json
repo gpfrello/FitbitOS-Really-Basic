@@ -2,7 +2,7 @@
   "fitbit": {
     "appUUID": "73709738-2d9d-4947-ac63-9858dcae7ccb",
     "appType": "clockface",
-    "appDisplayName": "New Today",
+    "appDisplayName": "Very Basic",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
     "requestedPermissions": [
@@ -15,7 +15,7 @@
     ],
     "i18n": {
       "en": {
-        "name": "New Today"
+        "name": "Very Basic"
       }
     }
   }
