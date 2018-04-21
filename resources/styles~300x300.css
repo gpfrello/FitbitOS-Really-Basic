@@ -1,0 +1,45 @@
+.background {
+  viewport-fill: black;
+}
+
+#timeLabel {
+  font-size: 70;
+  font-family: System-Bold;
+  text-length: 8;
+  text-anchor: start;
+  x: 15;
+  y: 100;
+  fill: grey;
+}
+
+#heartrateLabel {
+  font-size: 50;
+  font-family: System-Bold;
+  text-length: 3;
+  text-anchor: middle;
+  x: 20%;
+  y: 80%;
+  fill: red;
+}
+
+#batteryLabel {
+  font-size: 15;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 5%;
+  fill: blue;
+}
+
+
+#stepsLabel {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 10;
+  text-anchor: start;
+  x: 50%;
+  y: 80%;
+  fill: white;
+}
+
