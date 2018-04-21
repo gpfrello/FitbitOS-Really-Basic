@@ -1,0 +1,22 @@
+{
+  "fitbit": {
+    "appUUID": "73709738-2d9d-4947-ac63-9858dcae7ccb",
+    "appType": "clockface",
+    "appDisplayName": "New Today",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "New Today"
+      }
+    }
+  }
+}

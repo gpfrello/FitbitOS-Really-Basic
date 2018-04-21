@@ -1,0 +1,9 @@
+<svg class="background">
+  <text id="timeLabel"/>
+  <text id="dateLabel" />
+  <text id="heartrateLabel" />
+  <text id="batteryLabel" />
+  <text id="stepsLabel" />
+</svg>
+
+
