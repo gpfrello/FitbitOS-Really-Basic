@@ -23,9 +23,6 @@ hrm.onreading = function() {
 }
 hrm.start();
 
-// Battery Measurement
-let batteryValue = battery.chargeLevel; // measure the battery level and send it to the variable batteryValue
-
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
@@ -50,6 +47,9 @@ clock.ontick = (evt) => {
   let stepsString = stepsValue + ' steps'; // I concatenate a the stepsValue (line above) with th string ' steps' and assign to a new variable
   stepsHandle.text = stepsString; // the string stepsString is being sent to the stepsHandle set at line 15
  
+  // Battery Measurement
+  let batteryValue = battery.chargeLevel; // measure the battery level and send it to the variable batteryValue
+  
   // Assignment value battery
   batteryHandle.text = `Batt: ${batteryValue} %`; // the string including the batteryValue is being sent to the batteryHandle set at line 14
   
