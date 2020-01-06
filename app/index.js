@@ -1,12 +1,12 @@
-import clock from "clock"; // needed to have a clock! (see line 33)
-import document from "document"; // needed for I have no idea what! If you don't put this nothing works!!!
-import { preferences } from "user-settings"; // needed to get the user preference 12h or 24h (see line 38)
-import { zeroPad, } from "../common/utils"; // import user function zeroPad (see lines 43, 45, 46)
-import { HeartRateSensor } from "heart-rate"; // import HR reading from sensor (seel line 18)
-import { battery } from "power"; // import battery level (see line26)
+import clock from "clock"; // needed to have a clock! (see lines 10, 28)
+import document from "document"; // needed to access the labels used to display values (see lines 12-16)
+import { preferences } from "user-settings"; // needed to get the user preference 12h or 24h (see line 33)
+import { zeroPad, } from "../common/utils"; // import user function zeroPad (see lines 38, 40, 41)
+import { HeartRateSensor } from "heart-rate"; // import HR reading from sensor (see line 18)
+import { battery } from "power"; // import battery level (see line 51)
 import userActivity from "user-activity"; //adjusted types (matching the stats that you upload to fitbit.com, as opposed to local types)
 
-// Update the clock every minute
+// Update the clock every second
 clock.granularity = "seconds"; //clock is refreshing every sec. It is possible to select minutes as well
 
 // Get a handle on the <text> elements specified in the index.gui file
@@ -24,12 +24,12 @@ hrm.onreading = function() {
 hrm.start();
 
 
-// Update the <text> element every tick with the current time
+// Update the <text> elements every tick with the current time
 clock.ontick = (evt) => {
   const now = evt.date; // get the actual instant
   let hours = now.getHours(); // separate the actual hours from the instant "now"
   let mins = now.getMinutes(); // separate the actual minute from the instant "now"
-  let secs = now.getSeconds(); // separate the actual second from the instan "now"
+  let secs = now.getSeconds(); // separate the actual second from the instant "now"
   if (preferences.clockDisplay === "12h") { // check from your wach settings if you use 12h or 24h visualization
     // 12h format
     hours = hours % 12 || 12; 
